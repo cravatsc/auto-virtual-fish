@@ -1,10 +1,10 @@
 #!/usr/bin/env fish
 
-if test -e .vf
-    echo 'Project is already linked to a virtual env, please see .vf file'
+if test -e .venv
+    echo 'Project is already linked to a virtual env, please see .venv file'
 else
     set env_name $argv[1]
-    touch .vf
-    echo $env_name > .vf 
+    touch .venv
+    echo $env_name > .venv 
     vf new $env_name
 end
