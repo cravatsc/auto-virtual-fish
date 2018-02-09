@@ -11,6 +11,6 @@ A util to auto activate and deactivate virtual fish based on current directory l
 3. Source this script and either use `funcsave vEnvManager` or add `source ~/.config/fish/functions/vEnvManager.fish` to your `~/.config/fish/config.fish` file
 
 ## Usage
-To create a new virtual env, from the base directory of your project, run `newenv {envName}`. This will generate a new virtual env that is tied to your project via the .vf file.
+To create a new virtual env, from the base directory of your project, run `newenv <options> {envName}`. This will generate a new virtual env that is tied to your project via the .vf file. The options are the same as the 'new' command from [virtualfish usage](http://virtualfish.readthedocs.io/en/latest/usage.html#commands)
 
 When changing into your base directory of a project, the virtual env tied to your project will be activated. This will stay activated until you leave the base directory path associated with the env.
