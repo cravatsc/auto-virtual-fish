@@ -3,8 +3,8 @@
 if test -e .venv
     echo 'Project is already linked to a virtual env, please see .venv file'
 else
-    set env_name $argv[1]
+    set env_name $argv[-1]
     touch .venv
     echo $env_name > .venv 
-    vf new $env_name
+    vf new $argv
 end
